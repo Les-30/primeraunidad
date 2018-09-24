@@ -1,0 +1,9 @@
+print("Teclea la base mayor")
+basemay = float(input())
+print("Teclea la base menor")
+basemen = float(input())
+print("Teclea la altura")
+altura = float(input())
+area = (basemay + basemen * altura) / 2
+print("El area de tu trapecio es: ", end='', flush=True)
+print(area)

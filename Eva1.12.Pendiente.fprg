@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Les"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:51:33 a. m."/>
+        <attribute name="created" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0wOS0xNDswOTo0MDozNSBhLiBtLjsyNDkz"/>
+        <attribute name="edited" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0wOS0xNDswOTo1MTozMyBhLiBtLjsxOzI2MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ingresa el valor de Y2&quot;" newline="True"/>
+            <declare name="Valory2" type="Real" array="False" size=""/>
+            <input variable="Valory2"/>
+            <output expression="&quot;Inresa el valor de Y1&quot;" newline="True"/>
+            <declare name="Valory1" type="Real" array="False" size=""/>
+            <input variable="Valory1"/>
+            <output expression="&quot;Ingresa el valor de X2&quot;" newline="True"/>
+            <declare name="Valorx2" type="Real" array="False" size=""/>
+            <input variable="Valorx2"/>
+            <output expression="&quot;Ingresa el valor de X1&quot;" newline="True"/>
+            <declare name="Valorx1" type="Real" array="False" size=""/>
+            <input variable="Valorx1"/>
+            <declare name="pend" type="Real" array="False" size=""/>
+            <assign variable="pend" expression="((Valory2-Valory1) / (Valorx2-Valorx1))"/>
+            <output expression="&quot;La pendiente es: &quot;" newline="False"/>
+            <output expression="pend" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

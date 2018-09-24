@@ -1,0 +1,20 @@
+print("inserta el numerador de la fraccion1")
+numF1 = int(input())
+print("inserta el valor del denominador de la fraccion 1")
+denomF1 = int(input())
+print("inserta el valor del numerador de la fraccion 2")
+numF2 = int(input())
+print("inserta el valor del denominador de la fraccion 2 ")
+denomF2 = int(input())
+mNumera = numF1 * numF2
+mDeno = denomF1 * denomF2
+print("La multiplicacion da como resultado: " + mNumera + "/" + mDeno)
+divNumera = numF1 * denomF2
+divDeno = denomF1 * numF2
+print("La division tiene como resultado: " + divNumera + "/" + divDeno)
+sumaNum = numF1 * denomF2 + denomF1 * numF2
+sumaDenom = denomF1 * denomF2
+print("La suma da como resultado: " + sumaNum + "/" + sumaDenom)
+restaNum = numF1 * denomF2 - denomF1 * numF2
+restaDenom = denomF1 * denomF2
+print("La resta da como resultado: " + restaNum + "/" + restaDenom)

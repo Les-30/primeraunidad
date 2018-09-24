@@ -1,0 +1,76 @@
+
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "inserta el numerador de la fraccion1" << endl;
+    int numF1;
+    
+    cin >> numF1;
+    cout << "inserta el valor del denominador de la fraccion 1" << endl;
+    int denomF1;
+    
+    cin >> denomF1;
+    cout << "inserta el valor del numerador de la fraccion 2" << endl;
+    int numF2;
+    
+    cin >> numF2;
+    cout << "inserta el valor del denominador de la fraccion 2 " << endl;
+    int denomF2;
+    
+    cin >> denomF2;
+    double mNumera;
+    
+    mNumera = numF1 * numF2;
+    double mDeno;
+    
+    mDeno = denomF1 * denomF2;
+    cout << "La multiplicacion da como resultado: " << mNumera << "/" << mDeno << endl;
+    double divNumera;
+    
+    divNumera = numF1 * denomF2;
+    double divDeno;
+    
+    divDeno = denomF1 * numF2;
+    cout << "La division tiene como resultado: " << divNumera << "/" << divDeno << endl;
+    int sumaNum;
+    
+    sumaNum = numF1 * denomF2 + denomF1 * numF2;
+    int sumaDenom;
+    
+    sumaDenom = denomF1 * denomF2;
+    cout << "La suma da como resultado: " << sumaNum << "/" << sumaDenom << endl;
+    int restaNum;
+    
+    restaNum = numF1 * denomF2 - denomF1 * numF2;
+    int restaDenom;
+    
+    restaDenom = denomF1 * denomF2;
+    cout << "La resta da como resultado: " << restaNum << "/" << restaDenom << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

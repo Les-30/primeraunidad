@@ -1,0 +1,7 @@
+print("Teclea los grados que quieres que abra tu esfera")
+grados = float(input())
+print("Teclea el radio")
+radio = float(input())
+vol = float(4) / 3 * (3.14 * radio ** 3 / 360) * grados
+print("El volumen que buscas es: ", end='', flush=True)
+print(vol)

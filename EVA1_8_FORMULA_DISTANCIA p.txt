@@ -1,0 +1,9 @@
+print("Teclea la velocidad inicial")
+vinicial = float(input())
+print("Teclea la velocidad final")
+vfinal = float(input())
+print("Teclea el tiempo")
+tiempo = float(input())
+dist = (vfinal + vinicial) / 2 * tiempo
+print("La distancia es: ", end='', flush=True)
+print(dist)

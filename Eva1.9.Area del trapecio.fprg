@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-13 09:40:21 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDc7MjAxOC0wOS0xMzswOTowODozNCBhLiBtLjsyOTYw"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDc7MjAxOC0wOS0xMzswOTo0MDoyMSBhLiBtLjs4OzMwNjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Teclea la base mayor&quot;" newline="True"/>
+            <declare name="Basemay" type="Real" array="False" size=""/>
+            <input variable="Basemay"/>
+            <output expression="&quot;Teclea la base menor&quot;" newline="True"/>
+            <declare name="basemen" type="Real" array="False" size=""/>
+            <input variable="basemen"/>
+            <output expression="&quot;Teclea la altura&quot;" newline="True"/>
+            <declare name="altura" type="Real" array="False" size=""/>
+            <input variable="altura"/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="((Basemay + basemen * altura) / 2)"/>
+            <output expression="&quot;El area de tu trapecio es: &quot;" newline="False"/>
+            <output expression="area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

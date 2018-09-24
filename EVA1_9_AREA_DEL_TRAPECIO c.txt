@@ -1,0 +1,48 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    cout << "Teclea la base mayor" << endl;
+    double basemay;
+    
+    cin >> basemay;
+    cout << "Teclea la base menor" << endl;
+    double basemen;
+    
+    cin >> basemen;
+    cout << "Teclea la altura" << endl;
+    double altura;
+    
+    cin >> altura;
+    double area;
+    
+    area = (basemay + basemen * altura) / 2;
+    cout << "El area de tu trapecio es: ";
+    cout << area << endl;
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}

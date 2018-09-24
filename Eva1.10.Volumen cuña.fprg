@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="temporal2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:40:21 a. m."/>
+        <attribute name="created" value="dGVtcG9yYWwyO0xBQkExMzIwNDc7MjAxOC0wOS0xMzswOTo0MDo1NCBhLiBtLjsyOTU4"/>
+        <attribute name="edited" value="dGVtcG9yYWwyO0xBQkExMzIwNDc7MjAxOC0wOS0xMzswOTo0OTo0MSBhLiBtLjsxOzMwNzE="/>
+        <attribute name="edited" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0wOS0xNDswOTo0MDoyMSBhLiBtLjsyOzI1OTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Teclea los grados que quieres que abra tu esfera&quot;" newline="True"/>
+            <declare name="grados" type="Real" array="False" size=""/>
+            <input variable="grados"/>
+            <output expression="&quot;Teclea el radio&quot;" newline="True"/>
+            <declare name="radio" type="Real" array="False" size=""/>
+            <input variable="radio"/>
+            <declare name="vol" type="Real" array="False" size=""/>
+            <assign variable="vol" expression="((4/3) * (3.14 * (radio^3)/360) * grados)"/>
+            <output expression="&quot;El volumen que buscas es: &quot;" newline="False"/>
+            <output expression="vol" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

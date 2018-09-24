@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Les"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-24 12:23:09 a. m."/>
+        <attribute name="created" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0wOS0yMzswOTo0ODoxNyBwLiBtLjsyNTE2"/>
+        <attribute name="edited" value="TGVzO0xFU0xJRVBFTkE7MjAxOC0wOS0yNDsxMjoyMzowOSBhLiBtLjsyOzI1OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;inserta el numerador de la fraccion1&quot;" newline="True"/>
+            <declare name="NumF1" type="Integer" array="False" size=""/>
+            <input variable="NumF1"/>
+            <output expression="&quot;inserta el valor del denominador de la fraccion 1&quot;" newline="True"/>
+            <declare name="DenomF1" type="Integer" array="False" size=""/>
+            <input variable="DenomF1"/>
+            <output expression="&quot;inserta el valor del numerador de la fraccion 2&quot;" newline="True"/>
+            <declare name="NumF2" type="Integer" array="False" size=""/>
+            <input variable="NumF2"/>
+            <output expression="&quot;inserta el valor del denominador de la fraccion 2 &quot;" newline="True"/>
+            <declare name="DenomF2" type="Integer" array="False" size=""/>
+            <input variable="DenomF2"/>
+            <declare name="mNumera" type="Real" array="False" size=""/>
+            <assign variable="mNumera" expression="NumF1 * NumF2"/>
+            <declare name="mDeno" type="Real" array="False" size=""/>
+            <assign variable="mDeno" expression="DenomF1 * DenomF2"/>
+            <output expression="&quot;La multiplicacion da como resultado: &quot;&amp;mNumera&amp; &quot;/&quot; &amp;mDeno" newline="True"/>
+            <declare name="divNumera" type="Real" array="False" size=""/>
+            <assign variable="divNumera" expression="NumF1 * DenomF2"/>
+            <declare name="divDeno" type="Real" array="False" size=""/>
+            <assign variable="divDeno" expression="DenomF1 * NumF2"/>
+            <output expression="&quot;La division tiene como resultado: &quot; &amp;divNumera&amp; &quot;/&quot; &amp;divDeno" newline="True"/>
+            <declare name="sumaNum" type="Integer" array="False" size=""/>
+            <assign variable="sumaNum" expression="(NumF1 * DenomF2) + (DenomF1 * NumF2)"/>
+            <declare name="sumaDenom" type="Integer" array="False" size=""/>
+            <assign variable="sumaDenom" expression="DenomF1 * DenomF2"/>
+            <output expression="&quot;La suma da como resultado: &quot; &amp;sumaNum&amp; &quot;/&quot; &amp;sumaDenom" newline="True"/>
+            <declare name="restaNum" type="Integer" array="False" size=""/>
+            <assign variable="restaNum" expression="(NumF1 * DenomF2) - (DenomF1 * NumF2)"/>
+            <declare name="restaDenom" type="Integer" array="False" size=""/>
+            <assign variable="restaDenom" expression="DenomF1 * DenomF2"/>
+            <output expression="&quot;La resta da como resultado: &quot; &amp;restaNum&amp; &quot;/&quot; &amp;restaDenom" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
